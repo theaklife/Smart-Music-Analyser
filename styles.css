@@ -1,0 +1,172 @@
+:root {
+  --spotify-green: #1DB954;
+  --dark-bg: #121212;
+  --card-bg: #181818;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3B3B3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--spotify-green);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.upload-box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.file-upload {
+  flex: 1;
+  min-width: 200px;
+}
+
+.file-upload label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.file-upload input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 2px dashed #444;
+  background-color: var(--card-bg);
+  color: white;
+  cursor: pointer;
+}
+
+.genre-select {
+  flex: 1;
+  min-width: 200px;
+}
+
+.genre-select select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--card-bg);
+  color: white;
+}
+
+.file-info {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: none;
+}
+
+.results {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.mood-header {
+  color: var(--spotify-green);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mood-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detected-from {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.song-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.song-card:hover {
+  transform: translateY(-3px);
+}
+
+.song-info {
+  margin-bottom: 0.8rem;
+}
+
+.song-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.song-artist {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.spotify-embed {
+  width: 100%;
+  border-radius: 8px;
+  margin: 0.8rem 0;
+  border: none;
+}
+
+.song-link {
+  display: inline-block;
+  color: var(--spotify-green);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.song-link:hover {
+  text-decoration: underline;
+}
+
+.no-results {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 600px) {
+  .upload-box {
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+}

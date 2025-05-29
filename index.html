@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎵 Smart Music Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.7/jsmediatags.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎧 Music Mood & Genre Detector</h1>
+    <div class="upload-box">
+      <div class="file-upload">
+        <label for="audioUpload">Choose Audio File</label>
+        <input type="file" id="audioUpload" accept="audio/*">
+      </div>
+      <div class="genre-select">
+        <select id="genreSelect">
+          <option value="">Auto-Detect Genre</option>
+          <option value="Phonk">Phonk</option>
+          <option value="Trap">Trap</option>
+          <option value="Sad">Sad</option>
+          <option value="Love">Love</option>
+          <option value="Pop">Pop</option>
+          <option value="Lofi">Lofi</option>
+          <option value="Rock">Rock</option>
+          <option value="Indie">Indie</option>
+        </select>
+      </div>
+    </div>
+    <div id="fileInfo" class="file-info"></div>
+    <div id="results" class="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
