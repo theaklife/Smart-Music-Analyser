@@ -66,8 +66,6 @@ smart-music-analyzer/
 
 Deploy the app to any static hosting service:
 - [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
 
 ##  Known Issues
 
